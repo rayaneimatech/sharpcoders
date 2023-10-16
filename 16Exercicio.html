@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16 - Exercício</title>
+
+    <!-- JS -->
+    <script>
+
+        // Desenvolver um sistema onde o usuário informa um número, em seguida exiba a tabuada daquele número
+
+        let num = Number(prompt("Digite um número:"))
+        
+        // Laço
+// esse indice é pra saber quantas vezes eu fiz uma repetição (nesse caso, começou no 0, vai terminar no 10 porque é menor que 11)
+
+        let indice = 0
+
+        while(indice < 11) {
+            // document.write(num + " x " + indice + " = " + num * indice + "<br>")
+            document.write(`${num} x ${indice} = ${num * indice} <br>`)
+            indice++
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
