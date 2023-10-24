@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // Contabilizar pares e impares
+        let impar = 0
+        let par = 0
+
+        // Valida
+        let valida = false
+        
+        do {
+        // Informe um número
+        let numero = parseInt(prompt("Informe um número:"))
+
+        // Laço
+        if (numero < 0) {
+            alert ('Favor informar um número maio ou igual que zero')
+        } else { 
+            // Altera o valor da variável valida
+            valida = true
+            
+            for (let i = 0 ; i <= numero ; i++) {
+                // Condicional
+                if (i % 2 == 0) {
+                    par++
+                } else {
+                    impar++
+                }
+            }
+
+        // Retornar 
+        document.write(`Pares: ${par}`)
+        document.write(`<br>Impares: ${impar}`)
+        }
+    } while (valida == false)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
