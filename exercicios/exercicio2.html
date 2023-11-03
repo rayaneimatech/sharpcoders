@@ -9,11 +9,18 @@
         const pesoB = 3
         const pesoC = 5
 
-        let A = parseFloat(prompt()) * pesoA
-        let B = parseFloat(prompt()) * pesoB
-        let C = parseFloat(prompt()) * pesoC
-        let M = parseFloat(A * pesoA + pesoB * B + pesoC * C) / 10.0
+        let A = obterNotaPeso(prompt("Nota A"), pesoA) 
+        let B = obterNotaPeso(prompt("Nota B"), pesoB) 
+        let C = obterNotaPeso(prompt("Nota C"), pesoC)
+        let M = parseFloat(A +  B + C) / (pesoA + pesoB + pesoC)
 
+        function obterNotaPeso(nota, peso) {
+            if (!isNaN(nota) && nota > 10) {
+                return 0
+            } else {
+                return parseFloat(nota * peso)        
+            }
+        }
         document.write(`MEDIA = ${M.toFixed(1)}`)
 
     </script>

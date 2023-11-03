@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+        // CHATGPT -----------------------------------------------
+
+        // Leitura dos dados da peça 1
+        const entrada1 = prompt("Digite o código da peça 1, a quantidade da peça 1 e o valor unitário da peça 1 (separados por espaço):");
+        const dados1 = entrada1.split(" "); // Dividindo a entrada em partes
+        const codigo1 = parseInt(dados1[0]);
+        const quantidade1 = parseInt(dados1[1]);
+        const valorUnitario1 = parseFloat(dados1[2]);
+
+        // Leitura dos dados da peça 2
+        const entrada2 = prompt("Digite o código da peça 2, a quantidade da peça 2 e o valor unitário da peça 2 (separados por espaço):");
+        const dados2 = entrada2.split(" "); // Dividindo a entrada em partes
+        const codigo2 = parseInt(dados2[0]);
+        const quantidade2 = parseInt(dados2[1]);
+        const valorUnitario2 = parseFloat(dados2[2]);
+
+        // Cálculo do valor a ser pago
+        const totalPagar = (quantidade1 * valorUnitario1) + (quantidade2 * valorUnitario2);
+
+        // Exibição do valor a ser pago com duas casas decimais
+        document.write(`VALOR A PAGAR: R$ ${totalPagar.toFixed(2)}`);
+
+        // ---------------------------------------------------------
+
+        
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
