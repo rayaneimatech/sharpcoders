@@ -1,0 +1,85 @@
+/* Estilização global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 14px Arial;
+}
+
+/* Topo */
+header {
+    background-color: rgba(128, 128, 128, 0.518);
+    overflow: auto;
+}
+
+header img {
+    float: left;
+    margin: 15px;
+}
+
+header nav {
+    float: right;
+}
+
+header a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: rgb(101, 22, 22);
+}
+
+/* Sessão viagens */
+.viagens {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.viagens li {
+    display: inline-block;
+    margin-left: 28px;
+    margin-top: 15px;
+}
+
+/* Sessão sobre */
+.sobre {
+    width: 1200px;
+    margin: 80px auto;
+    overflow: auto;
+}
+
+.sobre img {
+    float: left;
+    margin-left: 30px;
+}
+
+.sobre div {
+    float: right;
+    width: 700px;
+}
+
+.sobre h1 {
+    font-size: 32px;
+}
+
+.sobre p {
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 25px;
+    text-indent: 20px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}
