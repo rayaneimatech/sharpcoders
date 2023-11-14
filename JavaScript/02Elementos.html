@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // Vetor de cidades
+        let cidades = [ 'São Paulo', 'Curitiba', 'Rio de Janeiro', 'Florianópolis', 'Belo Horizonte']
+
+        // Ao carregar
+        window.onload = function() {        //capturar o elemento
+            // Obter elemento ul
+            let lista = document.getElementsByTagName('ul')[0];
+
+            // Laço de repetição
+            for (let i = 0; i < cidades.length; i++) {
+                // Cliar o elemento li
+                let item = document.createElement('li')
+
+                // Adicionar texto no elemento li
+                item.innerText = cidades[i]
+
+                // Adicionar elemento li na lista
+                lista.appendChild(item);
+                // lista.append => opção para adicionar qlq estrutura (texto, imagem, video). quando não usar uma estrutura html. aceita um estrutura completa como aceita algo simples
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <!-- Lista -->
+    <ul class="lista"></ul>
+
+
+
+    
+</body>
+</html>
