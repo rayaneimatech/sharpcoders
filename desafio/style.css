@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+}
+
+/* Ultility Classes */
+.btn-primary {
+    background: #1DB954;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar .navbar-container {
+    width: 75.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#navbar .navbar-container ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+
+#navbar .navbar-container ul li {
+    padding: 0 20px;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+    border-right: 1px solid white;
+
+}
+
+/* Showcase */
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url(./img/musica.jpg) center center/cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#showcase .showcase-container h2 {
+    font-size: 4rem;
+}
+
+#showcase .showcase-container p {
+    margin: 15px 0;
+    font-size: 1.1rem
+}
+
+/* Footer */
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer .footer-content {
+    display: flex;
+    width: 80.5%;
+    margin: auto;
+    padding: 75px;
+}
+
+#footer .footer-content .footer-menu {
+    margin: 0 40px;
+    list-style: none;
+}
+
+#footer .footer-content .footer-menu p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
